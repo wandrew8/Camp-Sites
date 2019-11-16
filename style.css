@@ -1,0 +1,84 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+h2 {
+    color: #444;
+}
+
+header h2 {
+    color: #fff;
+}
+
+.jumbotron-fluid {
+    display: block;
+    position: relative;
+    height: auto;
+}
+
+.jumbotron-fluid:after {
+    content: "";
+    background: linear-gradient(45deg, rgba(0, 98, 102, 0.8), rgba(72, 219, 251, 0.7), rgba(72, 219, 251, 0.5), rgba(0, 0, 0, 0)), url("https://cdn.worldvectorlogo.com/logos/google-play-books.svg");
+    background: linear-gradient(45deg, rgba(74, 105, 189, 0.9), rgba(74, 105, 189, 0.2)), url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=80");
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 6rem;
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 200px
+}
+
+.border-right {
+    border-left: 1px ridge;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.border-left {
+    border-right: 1px ridge;
+    padding: 1rem;
+}
+
+footer a {
+    color: white;
+}
+
+.footer {
+    display: block;
+    position: relative;
+    height: auto;
+}
+
+.footer:after {
+    content: "";
+    background: linear-gradient(45deg, rgba(0, 98, 102, 0.8), rgba(72, 219, 251, 0.7), rgba(72, 219, 251, 0.5), rgba(0, 0, 0, 0)), url("https://cdn.worldvectorlogo.com/logos/google-play-books.svg");
+    background: linear-gradient(45deg, rgba(43, 97, 141, 0.7), rgba(36, 117, 192, 0.5)), url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=80");
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
