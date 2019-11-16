@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,78 +10,151 @@
     <link rel="stylesheet" href="style.css">
     <title>NuCamp: A Better Way to Camp</title>
 </head>
+
 <body>
 
-        <header class="jumbotron-fluid shadow-lg">
-                <div class="container shadow-lg">
-                    <div class="row header-content">
-                        <div class="col">
-                            <h1>NuCamp</h1>
-                            <h2>A better way to camp</h2>
-                        </div>
-                    </div>
+    <header class="jumbotron-fluid shadow-lg">
+        <div class="container">
+            <div class="row header-content">
+                <div class="col">
+                    <h1>NuCamp</h1>
+                    <h2>A better way to camp</h2>
                 </div>
-            </header>
-        
-            <div class="container">
-                <div class="row">
-                    <div class="col mt-3">
-                       <h2>About Us</h2>
-                       <hr />
-                    </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3">
+                <h2>About Us</h2>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-6">
+                <h3>Our Mission</h3>
+                <p>We present a curated database of the best campsites in the vast woods and backcountry of the World
+                    Wide Web Wilderness. We increase access to adventure for the public while promoting safe and
+                    respectful use of resources. The expert wilderness trekkers on our staff personally verify each
+                    campsite to make sure that they are up to our standards. We also present a platform for campers to
+                    share reviews on campsites they have visited with each other.</p>
+            </div>
+            <div class="d-none d-lg-block col-lg-6">
+                    <img class="mission-photo thumbnail" src="https://media3.giphy.com/media/Sye75bfzPZrmo/giphy.gif?cid=790b761158265fcc5a4464bc94d46bf0b5fa1ea1adfa1c65&rid=giphy.gif">
                 </div>
-        
-                <div class="row">
-                    <div class="col col-sm-6">
-                        <h3>Our Mission</h3>
-                        <p >We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for campers to share reviews on campsites they have visited with each other.</p>
-                    </div>
+        </div>
+        <hr>
+
+        <!-- Accordion Content -->
+
+        <div class="accordion mb-3" id="accordionExample">
+                <h3>Community Partners</h3>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Bootstrap Outfitters
+                        </button>
+                    </h2>
                 </div>
-        
-                <div>
-                    <div>
-                        <h3>Community Partners</h3>
-                        <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
-                        <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
-                        <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
-                        <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
-                        <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
-                        <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
-                        <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <small>Outdoor Gear Specialists</small>
+                        <p>Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
                     </div>
                 </div>
             </div>
-        
-            <footer>
-                    <div class="container-fluid pt-4">
-                        <div class="row">
-                            <div class="col-4 col-sm-2 offset-1 text-center">
-            
-                                <h5 class="text-white">Links</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="aboutus.html">About</a></li>
-                                    <li><a href="#">Sites</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-6 link-container text-center col-sm-5">
-                                <h5 class="text-white">Social</h5>
-                                <a href="http://instagram.com/">Instagram  |</a>
-                                <a href="http://facebook.com/">Facebook  |</a>
-                                <a href="http://twitter.com/">Twitter  |</a>
-                                <a href="http://youtube.com/">YouTube</a>
-                            </div>
-                            <div class="col-sm-4 text-center text-white">
-                                Tel: 1-206-555-1234<br />
-                                Email: campsites@nucamp.co
-                            </div>
-                        </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Git Out Expeditions
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <small>Group Adventure Expeditions</small>
+                        <p>Join Git Out Expeditions to explore new horizons with a group of other
+                            adventurers!</p>
                     </div>
-                </footer>
-                <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-                <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-                <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-            </body>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Mongo Fly Shop
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <small>Your Neighborhood Fly Fishing Shop</small>
+                        <p>Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo
+                            Fly Shop.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Node Outdoor Apparel
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <small>Outdoor Clothes & Shoes</small>
+                        <p>From polar fleeces to swimsuits, hiking boots to waders, a visit to Node
+                            will be sure to get you covered.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer container-fluid pt-4">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1 text-center">
+
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 link-container text-center col-sm-5">
+                    <h5 class="text-white">Social</h5>
+                    <a href="http://instagram.com/">Instagram |</a>
+                    <a href="http://facebook.com/">Facebook |</a>
+                    <a href="http://twitter.com/">Twitter |</a>
+                    <a href="http://youtube.com/">YouTube</a>
+                </div>
+                <div class="col-sm-4 text-center text-white">
+                    Tel: 1-206-555-1234<br />
+                    Email: campsites@nucamp.co
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
 </html>

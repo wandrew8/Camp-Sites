@@ -37,9 +37,6 @@ header h2 {
     position: relative;
     height: auto;
     text-align: center;
-    -moz-box-shadow: 2px 2px 3px 3px #ccc;
-    -webkit-box-shadow: 2px 2px 3px 3px #ccc;
-    box-shadow: 2px 2px 3px 3px #ccc;
 }
 
 .jumbotron-fluid:after {
@@ -79,6 +76,16 @@ header h2 {
 .background-light {
     background: #f8f9fa;
 }
+
+
+/* About Up Content Styling */
+
+.mission-photo {
+    width: 100%;
+    height: auto;
+    max-height: 254px;
+}
+
 
 /* Footer Styling */
 
