@@ -1,3 +1,5 @@
+/* Body Styling */
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -6,24 +8,43 @@ h1, h2, h3 {
     font-family: 'Fredericka the Great', cursive;
 }
 
+h5 {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+
 h2 {
     color: #444;
 }
 
+/* Header Styling */
+
 header h2 {
     color: #fff;
+}
+
+.header-content {
+    padding: 50px 0px;
+    min-height: 200px
 }
 
 .jumbotron-fluid {
     display: block;
     position: relative;
     height: auto;
+    text-align: center;
+    -moz-box-shadow: 2px 2px 3px 3px #ccc;
+    -webkit-box-shadow: 2px 2px 3px 3px #ccc;
+    box-shadow: 2px 2px 3px 3px #ccc;
 }
 
 .jumbotron-fluid:after {
     content: "";
-    background: linear-gradient(45deg, rgba(0, 98, 102, 0.8), rgba(72, 219, 251, 0.7), rgba(72, 219, 251, 0.5), rgba(0, 0, 0, 0)), url("https://cdn.worldvectorlogo.com/logos/google-play-books.svg");
-    background: linear-gradient(45deg, rgba(74, 105, 189, 0.9), rgba(74, 105, 189, 0.2)), url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=80");
+    background: linear-gradient(45deg, rgba(50, 91, 202, 0.9), rgba(34, 180, 124, 0.4)), url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=80");
     background-position: center;
     object-fit: cover;
     opacity: 0.8;
@@ -35,10 +56,7 @@ header h2 {
     z-index: -1;
 }
 
-h1 {
-    font-size: 6rem;
-    color: white;
-}
+/* Home Page Content Styling */
 
 .row-content {
     padding: 50px 0px;
@@ -46,33 +64,39 @@ h1 {
     min-height: 200px
 }
 
-.border-right {
+.row-content-2 {
+    padding: 50px 0px;
+    min-height: 200px
+}
+
+.h2-container {
     border-left: 1px ridge;
+    border-right: 1px ridge;
     padding: 1rem;
-    text-align: center;
     margin: 0 auto;
 }
 
-.border-left {
-    border-right: 1px ridge;
-    padding: 1rem;
+.background-light {
+    background: #f8f9fa;
 }
+
+/* Footer Styling */
 
 footer a {
     color: white;
 }
 
-.footer {
+footer {
     display: block;
     position: relative;
     height: auto;
+    
 }
 
-.footer:after {
+footer:after {
     content: "";
-    background: linear-gradient(45deg, rgba(0, 98, 102, 0.8), rgba(72, 219, 251, 0.7), rgba(72, 219, 251, 0.5), rgba(0, 0, 0, 0)), url("https://cdn.worldvectorlogo.com/logos/google-play-books.svg");
-    background: linear-gradient(45deg, rgba(43, 97, 141, 0.7), rgba(36, 117, 192, 0.5)), url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=80");
-    background-position: center;
+    background: linear-gradient(45deg, rgba(50, 91, 202, 0.9), rgba(34, 180, 124, 0.4)), url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=80");
+    background-position: bottom;
     object-fit: cover;
     opacity: 0.8;
     top: 0;
@@ -82,3 +106,45 @@ footer a {
     position: absolute;
     z-index: -1;
 }
+
+/* Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 6rem;
+        text-align: left;
+    }
+    .jumbotron-fluid {
+        text-align: left;
+    }
+    .h2-container {
+        height: 200px;
+        text-align: center;
+        padding: 1rem;
+        background: #f8f9fa;
+        background-position: center;
+    }
+    .h2-container h2 {
+        color: #444;
+    }
+    .row-content, .row-content-2 {
+        padding: 0;
+    }
+    .background-light {
+        background: #fff;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
