@@ -21,6 +21,12 @@ h2 {
     color: #444;
 }
 
+/* Navbar Styling */
+
+.navbar {
+    background: linear-gradient(45deg, rgba(50, 91, 202, 0.7), rgba(56, 91, 155, 0.7))}
+
+
 /* Header Styling */
 
 header h2 {
@@ -85,6 +91,13 @@ header h2 {
     height: auto;
     max-height: 254px;
 }
+
+/* Search Page Content Styling */
+
+.search-form {
+    margin: 2rem auto;
+}
+
 
 
 /* Footer Styling */
