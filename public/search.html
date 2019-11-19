@@ -49,9 +49,8 @@
 
         <form class="form-inline justify-content-center" id="searchForm">
             <div class="form-group mx-sm-3 mb-2">
-                <label for="inputPassword2" class="sr-only">Password</label>
-                <select class="form-control">
-                    <option value="WA">Select State</option>
+                <select name="state" required id="selectState" type="select" class="form-control">
+                    <option>Select a State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -105,7 +104,7 @@
                     <option value="WY">Wyoming</option>
                 </select>
             </div>
-            <button id="search-state" class="btn btn-primary mb-2">Submit</button>
+            <button id="search-state" type="submit" class="btn btn-primary mb-2">Submit</button>
         </form>
     </div>
 
@@ -134,7 +133,7 @@
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
                             class="fab fa-youtube"></i></a>
                 </div>
-                <div class="col-sm-4 text-white text-center">
+                <div class="col-sm-4 text-white text-center contact-info">
                     <h5>Contact</h5>
                     <a role="button" class="btn btn-link text-white" href="tel:+12065551234"><i class="fa fa-phone"></i>
                         1-206-555-1234</a><br />

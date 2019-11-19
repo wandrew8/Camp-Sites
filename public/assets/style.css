@@ -98,7 +98,20 @@ header h2 {
     margin: 2rem auto;
 }
 
+/* Contact Page Content Styling */
 
+.btn-link {
+    color: black;
+}
+
+.contact-info a {
+    margin: 0rem;
+    padding: 0px;
+}
+
+.contact-info {
+    margin-bottom: 1rem;
+}
 
 /* Footer Styling */
 
