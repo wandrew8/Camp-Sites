@@ -92,8 +92,18 @@ header h2 {
     max-height: 254px;
 }
 
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+
 .card {
     margin-top: 2rem;
+}
+
+.nav-link {
+    color: rgb(33, 37, 41);
 }
 
 blockquote {
@@ -154,6 +164,12 @@ blockquote p {
 
 footer a {
     color: white;
+}
+
+.icon, .icon a {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 footer {
