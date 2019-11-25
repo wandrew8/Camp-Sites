@@ -83,6 +83,24 @@ header h2 {
     background: #f8f9fa;
 }
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel img {
+    margin: 0 auto;
+}
+
+.carousel {
+    margin: 2rem auto;
+    border: solid rgba(50, 91, 202, 0.9) 2px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
 
 /* About Up Content Styling */
 

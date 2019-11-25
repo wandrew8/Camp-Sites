@@ -32,9 +32,61 @@
                         <li class="nav-item"><a class="nav-link" href="sites.html">Sites</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
+                    <span class="navbar-text ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fas mr-2 fa-sign-in-alt"></i>Login
+                        </a>
+                    </span>
                 </div>
             </div>
         </nav>
+
+        <!-- Modal Div -->
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Title</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail">Email Address</label>
+                                        <input type="email" class="form-control" id="loginEmail"
+                                            placeholder="Enter your Email">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="loginPassword" class="sr-only">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">Remember Me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary btn-sm ml-1" data-dismiss="modal">Sign
+                                        In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
         <div class="container">
             <div class="row header-content">
                 <div class="col">
@@ -42,11 +94,66 @@
                     <h2>A better way to camp</h2>
                 </div>
                 <div class="col-md-2 col-xl-2">
-                       <a href="#reserveForm" class="btn btn-info">Reserve</a>
-                    </div>
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-placement="bottom"
+                        data-html="true" data-toggle="tooltip"
+                        title="<h6>Make A Reservation</h6><br>Reserve online or call us at<br> 1-206-556-2374"
+                        animation="true"> Reserve Campsite</a>
+                </div>
             </div>
         </div>
     </header>
+
+    <!-- Image Carousel -->
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-md-8 mx-auto">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"> </li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground">
+                            <div class="carousel-caption">
+                                <h3>Breadcrumb Trail Campground</h3>
+                                <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path,
+                                    hike-in-only campground.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/react-lake.jpg" alt="React Lake Campground">
+                            <div class="carousel-caption">
+                                <h3>React Lake Campground</h3>
+                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this
+                                    campground on the shores of the pristine React Lake is a favorite for fly fishers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/chrome-river.jpg" alt="Chrome River Campground">
+                            <div class="carousel-caption">
+                                <h3>Chrome River Campground</h3>
+                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy
+                                    of old-growth firs at this enchanting spot by the Chrome River.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="container mt-4">
         <div class="row">
@@ -152,6 +259,7 @@
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="search.html">Search</a></li>
                     </ul>
+
                 </div>
                 <div class="col-6 link-container text-white text-center col-sm-5">
                     <h5>Social</h5>
@@ -173,15 +281,23 @@
                 </div>
             </div>
         </div>
-        <div class="icon">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div class="icon">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="./assets/app.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
-</body>
+
 
 </html>
