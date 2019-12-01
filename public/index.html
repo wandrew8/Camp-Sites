@@ -154,7 +154,7 @@
 
         </div>
 
-
+        <!-- Header Jumbotron -->
 
         <div class="container">
             <div class="row header-content">
@@ -171,10 +171,11 @@
     </header>
 
     <!-- Image Carousel -->
+
     <div class="container">
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
-                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                <div id="homeCarousel" data-interval="4000" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"> </li>
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
@@ -215,7 +216,12 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <div id="carouselButton">
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fa fa-pause"></i>
+                        </button>
 
+                    </div>
                 </div>
 
             </div>
@@ -237,6 +243,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Carousel Text Content -->
 
     <div class="container">
         <div class="row row-content-2 background-light align-items-center">
@@ -271,8 +279,7 @@
         </div>
     </div>
 
-
-
+    <!-- Footer Content -->
 
     <footer>
         <div class="footer container-fluid pt-4">
@@ -322,8 +329,21 @@
     <script src="./assets/app.js"></script>
     <script>
         $(function () {
+            $(".carousel").carousel({ interval: 2000 });
+            $("#carouselButton").click(function () {
+                if ($("#carouselButton i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton i").removeClass("fa-pause");
+                    $("#carouselButton i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton i").removeClass("fa-play");
+                    $("#carouselButton i").addClass("fa-pause");
+                }
+            });
+
             $('#myModal').modal(options)
-        })
+        });
     </script>
 </body>
 

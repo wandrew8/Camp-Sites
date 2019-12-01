@@ -24,8 +24,8 @@ h2 {
 /* Navbar Styling */
 
 .navbar {
-    background: linear-gradient(45deg, rgba(50, 91, 202, 0.7), rgba(56, 91, 155, 0.7))}
-
+    background: linear-gradient(45deg, rgba(50, 91, 202, 0.7), rgba(56, 91, 155, 0.7))
+}
 
 /* Header Styling */
 
@@ -99,8 +99,14 @@ header h2 {
 .carousel-item img {
     width: 100%;
     height: auto;
-  }
+}
 
+#carouselButton {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
 
 /* About Up Content Styling */
 
@@ -194,7 +200,6 @@ footer {
     display: block;
     position: relative;
     height: auto;
-    
 }
 
 .fab {
@@ -219,9 +224,7 @@ footer:after {
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {
-    
-}
+@media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
 
