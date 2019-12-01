@@ -169,6 +169,15 @@ blockquote p {
     margin: 2rem auto;
 }
 
+#camp-container {
+    min-height: 100vh;
+}
+
+.camp-card:hover {
+    transform: translateY(10px);
+    transition-duration: 0.5s;
+}
+
 /* Contact Page Content Styling */
 
 .btn-link {
