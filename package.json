@@ -1,9 +1,11 @@
 {
-  "name": "Camp-Sites",
+  "name": "CampSites",
   "version": "1.0.0",
   "description": "This is a website for the fictional campsites review site NuCamp.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --include-path scss public/assets/style.scss public/assets/style.css",
+    "watch-scss": "nodemon -e scss -x \"npm run scss\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
     "bootstrap-social": "^5.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "node-sass": "^4.13.0",
     "nodemon": "^1.19.4"
   }
 }
