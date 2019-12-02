@@ -53,7 +53,24 @@ $(".directions-finder").click(function() {
     console.log(directionsMaker)
 })
 
+//Carousel Functionality
 
+$(function () {
+    $(".carousel").carousel({ interval: 2000 });
+    $("#carouselButton").click(function () {
+        if ($("#carouselButton i").hasClass("fa-pause")) {
+            $(".carousel").carousel("pause");
+            $("#carouselButton i").removeClass("fa-pause");
+            $("#carouselButton i").addClass("fa-play");
+        } else {
+            $(".carousel").carousel("cycle");
+            $("#carouselButton i").removeClass("fa-play");
+            $("#carouselButton i").addClass("fa-pause");
+        }
+    });
+
+    $('#myModal').modal(options)
+});
 
 // OpenLayers. See https://openlayers.org/
 // License: https://raw.githubusercontent.com/openlayers/openlayers/master/LICENSE.md

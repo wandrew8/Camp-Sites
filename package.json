@@ -5,7 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --include-path scss public/assets/style.scss public/assets/style.css",
-    "watch-scss": "nodemon -e scss -x \"npm run scss\""
+    "watch-css": "nodemon -e scss -x \"npm run scss\"",
+    "nodemon": "nodemon server.js",
+    "watch:all": "concurrently \"npm run watch-css\" \"npm run nodemon\"",
+    "start": "npm run watch:all"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,10 @@
     "bootstrap-social": "^5.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
     "nodemon": "^1.19.4"
   }
 }

@@ -328,24 +328,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="./assets/app.js"></script>
-    <script>
-        $(function () {
-            $(".carousel").carousel({ interval: 2000 });
-            $("#carouselButton").click(function () {
-                if ($("#carouselButton i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton i").removeClass("fa-pause");
-                    $("#carouselButton i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton i").removeClass("fa-play");
-                    $("#carouselButton i").addClass("fa-pause");
-                }
-            });
-
-            $('#myModal').modal(options)
-        });
-    </script>
+    
 </body>
 
 
