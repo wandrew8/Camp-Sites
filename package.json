@@ -34,6 +34,7 @@
     "concurrently": "^5.0.0",
     "imagemin-cli": "^5.0.0",
     "nodemon": "^1.19.4",
-    "usemin-cli": "^0.5.1"
+    "usemin-cli": "^0.5.1",
+    "clean-css": "^4.1.11"
   }
 }
