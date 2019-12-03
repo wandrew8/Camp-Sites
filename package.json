@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "This is a website for the fictional campsites review site NuCamp.",
   "scripts": {
+    "build": "npm run imagemin && npm run usemin",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --include-path scss public/assets/style.scss public/assets/style.css",
     "watch-css": "nodemon -e scss -x \"npm run scss\"",
     "nodemon": "nodemon server.js",
     "watch:all": "concurrently \"npm run watch-css\" \"npm run nodemon\"",
-    "start": "npm run watch:all"
+    "start": "npm run watch:all",
+    "usemin": "usemin public/contact.html -d dist --htmlmin -o dist/contact.html && usemin public/aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin public/index.html -d dist --htmlmin -o dist/index.html && usemin public/search.html -d dist --htmlmin -o dist/search.html",
+    "imagemin": "imagemin img/* -o dist/img"
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,8 @@
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
-    "nodemon": "^1.19.4"
+    "imagemin-cli": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "usemin-cli": "^0.5.1"
   }
 }
