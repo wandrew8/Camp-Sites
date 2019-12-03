@@ -20,11 +20,16 @@ function displayCards(results) {
 
     let campSiteCardConatiner = document.getElementById("camp-container");
     for (let i = 0; i < results.data.length; i++) {
-        // var latLong = results.data[i].latLong.split(',');
-        // var latitude = latLong[0].slice(4);
-        // var longitude = latLong[1].slice(6);
-        
-        
+        var latLong = results.data[i].latLong.split(",");
+        var lat = latLong.slice(0, 1);
+        var long = latLong.slice(1, 2);
+        console.log(lat + " " + long)
+        var latString = lat.toString();
+        var longString = long.toString();
+        var latitude = latString.slice(4);
+        var longitude = longString.slice(6)
+
+        console.log(latitude + " " + longitude)
         var directions = results.data[i].directionsInfo;
 
         campSiteCardConatiner.innerHTML +=
@@ -38,11 +43,12 @@ function displayCards(results) {
             </div>
           <div class="text-center pb-3">
             <a href="${results.data[i].url}" target="_blank" class="btn btn-primary">Visit Website!<i class="fas pl-2 fa-share-square"></i></a>
-            <a data-directions="${directions} href="#map" class="btn btn-primary directions-finder">Find on Map<i class="fas pl-2 fa-share-square"></i></a>
+            <a onclick="moveTo(${longitude}, ${latitude})" data-directions="${directions}" href="#map" class="btn btn-primary directions-finder">Find on Map<i class="fas pl-2 fa-share-square"></i></a>
           </div>
         </div>
       </div>`
-    }
+        }
+
 }
 
 // onclick="moveTo(${longitude}, ${latitude});"
@@ -1961,6 +1967,6 @@ function moveTo(longitude, latitude) {
     var campSiteLocation = ol.proj.transform(
         [longitude, latitude],
         'EPSG:4326', 'EPSG:3857')
-    console.log("This seems to be working" + longitude + latitude)
+    console.log(`This seems to be working: Latitude: ${latitude} and longitidue ${longitude}`)
     map.getView().setCenter(campSiteLocation);
 }
