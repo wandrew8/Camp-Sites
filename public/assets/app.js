@@ -4,18 +4,17 @@ let queryURL = (`https://developer.nps.gov/api/v1/parks?stateCode=${inputValue}&
 
 $(document).ready(function () {
     displayCampgrounds();
-})
-
-function displayCampgrounds() {
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-    }).then(function (results) {
-        displayCards(results)
-    });
-}
-
-function displayCards(results) {
+    
+    function displayCampgrounds() {
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (results) {
+            displayCards(results)
+        });
+    }
+    
+    function displayCards(results) {
     console.log(results.data)
 
     let campSiteCardConatiner = document.getElementById("camp-container");
@@ -31,6 +30,8 @@ function displayCards(results) {
 
         console.log(latitude + " " + longitude)
         var directions = results.data[i].directionsInfo;
+        
+        console.log(typeof directions);
 
         campSiteCardConatiner.innerHTML +=
             `<div class="col-xs-12 col-sm-6 col-lg-4">
@@ -42,22 +43,25 @@ function displayCards(results) {
                 <p class="card-text">${results.data[i].description}</p>
             </div>
           <div class="text-center pb-3">
-            <a href="${results.data[i].url}" target="_blank" class="btn btn-primary">Visit Website!<i class="fas pl-2 fa-share-square"></i></a>
-            <a onclick="moveTo(${longitude}, ${latitude})" data-directions="${directions}" href="#map" class="btn btn-primary directions-finder">Find on Map<i class="fas pl-2 fa-share-square"></i></a>
+            <a href="${results.data[i].url}" target="_blank" class="btn btn-primary">Visit Website!<i class="fas pl-2 fa-external-link-alt"></i></a>
+            <a onclick="moveTo(${longitude}, ${latitude})" href="#map" class="btn btn-primary">Find on Map<i class="fa pl-2 fa-map"></i></a>
           </div>
         </div>
-      </div>`
-        }
-
+        </div>`
+    }
 }
 
-// onclick="moveTo(${longitude}, ${latitude});"
+    
 
-$(".directions-finder").click(function() {
-    console.log("clicked")
-    directionsMaker = $(this).attr("data-directions")
-    console.log(directionsMaker)
-})
+});
+
+function getDirections() {
+    console.log("get directions is working");
+    let directions = $(this).attr("data-directions");
+    console.log(directions)
+}
+
+
 
 //Carousel Functionality
 
