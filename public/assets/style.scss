@@ -2,13 +2,15 @@
 $color-background: #fff;
 $font-main: "Open Sans", sans-serif;
 $font-titles: 'Fredericka the Great', cursive;
+$color-teal: #17A2B8;
+$color-mid: #901CAD;
 
 /* Body Styling */
 body {
     font-family: $font-main;
 }
 
-h1, h2, h3 {
+h2, h3 {
     font-family: $font-titles;
 }
 
@@ -19,6 +21,8 @@ h5 {
 h1 {
     font-size: 4rem;
     color: $color-background;
+        font-family: $font-titles;
+
 }
 
 h2 {
@@ -578,10 +582,16 @@ footer:after {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+#reserveModal {
+    .modal-header {
+        background-color: $color-teal;
+        color: $color-background;
+    }
+}
 
-@media (min-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
+#loginModal {
+    .modal-header {
+        background-color: $color-mid;
+        color: $color-background;
+    }
+}

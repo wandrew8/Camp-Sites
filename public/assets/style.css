@@ -3,7 +3,7 @@
 body {
   font-family: "Open Sans", sans-serif; }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: "Fredericka the Great", cursive; }
 
 h5 {
@@ -11,7 +11,8 @@ h5 {
 
 h1 {
   font-size: 4rem;
-  color: #fff; }
+  color: #fff;
+  font-family: "Fredericka the Great", cursive; }
 
 h2 {
   color: #444; }
@@ -462,5 +463,10 @@ footer:after {
   .background-light {
     background: #fff; } }
 
-/* Large devices (desktops, 992px and up) */
-/* Extra large devices (large desktops, 1200px and up) */
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: #fff; }
+
+#loginModal .modal-header {
+  background-color: #901CAD;
+  color: #fff; }
