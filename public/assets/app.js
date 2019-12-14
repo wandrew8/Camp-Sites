@@ -62,18 +62,31 @@ function getDirections() {
 // Carousel Functionality
 
 $(function () {
-    $(".carousel").carousel({ interval: 2000 });
-    $("#carouselButton").click(function () {
-        if ($("#carouselButton i").hasClass("fa-pause")) {
-            $(".carousel").carousel("pause");
-            $("#carouselButton i").removeClass("fa-pause");
-            $("#carouselButton i").addClass("fa-play");
-        } else {
-            $(".carousel").carousel("cycle");
-            $("#carouselButton i").removeClass("fa-play");
-            $("#carouselButton i").addClass("fa-pause");
-        }
-    });
+    // $(".carousel").carousel({ interval: 2000 });
+    // $("#carouselButton").click(function () {
+    //     if ($("#carouselButton i").hasClass("fa-pause")) {
+    //         $(".carousel").carousel("pause");
+    //         $("#carouselButton i").removeClass("fa-pause");
+    //         $("#carouselButton i").addClass("fa-play");
+    //     } else {
+    //         $(".carousel").carousel("cycle");
+    //         $("#carouselButton i").removeClass("fa-play");
+    //         $("#carouselButton i").addClass("fa-pause");
+    //     }
+    // });
+
+    $(".carousel").carousel( { interval: 2000 } );
+        $("#carouselButton").click(function(){
+            if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                $(".carousel").carousel("pause");
+                $("#carouselButton").children("i").removeClass("fa-pause");
+                $("#carouselButton").children("i").addClass("fa-play");
+            } else {
+                $(".carousel").carousel("cycle");
+                $("#carouselButton").children("i").removeClass("fa-play");
+                $("#carouselButton").children("i").addClass("fa-pause"); 
+            }
+        });
 
     // LOGIN AND RESERVE MODALS
     $("#loginButton").click(function () {

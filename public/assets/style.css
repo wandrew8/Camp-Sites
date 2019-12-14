@@ -2,20 +2,16 @@
 /* Body Styling */
 body {
   font-family: "Open Sans", sans-serif; }
-
-h2, h3 {
-  font-family: "Fredericka the Great", cursive; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h1 {
-  font-size: 4rem;
-  color: #fff;
-  font-family: "Fredericka the Great", cursive; }
-
-h2 {
-  color: #444; }
+  body h2, body h3 {
+    font-family: "Fredericka the Great", cursive; }
+  body h5 {
+    font-size: 1.5rem; }
+  body h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-family: "Fredericka the Great", cursive; }
+  body h2 {
+    color: #444; }
 
 /* Navbar Styling */
 .navbar {

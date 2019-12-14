@@ -8,25 +8,25 @@ $color-mid: #901CAD;
 /* Body Styling */
 body {
     font-family: $font-main;
-}
-
-h2, h3 {
-    font-family: $font-titles;
-}
-
-h5 {
-    font-size: 1.5rem;
-}
-
-h1 {
-    font-size: 4rem;
-    color: $color-background;
+    
+    h2, h3 {
         font-family: $font-titles;
-
-}
-
-h2 {
-    color: #444;
+    }
+    
+    h5 {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        color: $color-background;
+        font-family: $font-titles;
+  
+    }
+    
+    h2 {
+        color: #444;
+    }
 }
 
 /* Navbar Styling */
